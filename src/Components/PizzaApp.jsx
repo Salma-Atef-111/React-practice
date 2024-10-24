@@ -47,11 +47,13 @@ const pizzaData = [
   
    export default function PizzaApp(){
       return <>
-    <div className="container">
+    <div className="myAppBody">
+      <div className="container">
         <Header/>
         <Menu/>
         <Footer/>
-    </div>
+      </div>
+    </div>  
       </>
    }
    function Header(){
@@ -74,30 +76,37 @@ const pizzaData = [
         <h2>Our Menu</h2>
 
         {/* conditional rendining عشان جوا ال jsx مينفعش نكتب js  */}
-
         {numPizzas > 0 ? (
+          <>
+            <p>Welcome to our Restaurant</p>
             <ul className="pizzas">
             {pizzaData.map((pizza) => (
               <Pizza pizzaObj={pizza} key={pizza.name}/>
             ))}
             </ul>
+            </>
         ) : <p>We still work on our menu please come back later </p>}
          
     </div>    
     </>
    }
-   function Pizza(props){
+   function Pizza({pizzaObj}){ //Destructing props
+
+
     //  this is condation if you would not run some of the menu that is not available
-    if (props.pizzaObj.soldOut) return null ; //early return
+    // if (pizzaObj.soldOut) return null ; //early return
 
 
     return <>
-    <li className="pizza">
-        <img src={props.pizzaObj.photoName} alt="pizza"/>
+
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ''}`}> 
+        {/* ده 2 كلاسز سوا وادناهم condation */}
+
+        <img src={pizzaObj.photoName} alt="pizza"/>
         <div>
-            <h3>{props.pizzaObj.name}</h3>
-            <p>{props.pizzaObj.ingredients}</p>
-            <span>{props.pizzaObj.price} $</span>
+            <h3>{pizzaObj.name}</h3>
+            <p>{pizzaObj.ingredients}</p>
+            <span>{pizzaObj.soldOut ? "Sold Out" : pizzaObj.price} </span>
         </div>
     </li>
     </>
@@ -118,7 +127,7 @@ const pizzaData = [
         ): (
           <p>We're happy to welcome you between {openHour}:00. and {closeHour}:00.</p>
         )}
-        <button className="btn">Order</button>
+        <button className="orderBtn">Order</button>
       </div>
          {/* {new Date().toLocaleTimeString()}.We're currently open */}
     </footer>

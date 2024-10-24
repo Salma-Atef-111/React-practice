@@ -1,47 +1,22 @@
-// import { useEffect, useState } from "react";
-// export default function App(){
-//   const [advice, setAdvice] = useState("");
-//   const [count, setCount] = useState(0);
-
-//   async function getAdvice() {
-//     const res = await fetch("https://api.adviceslip.com/advice");
-//     const data = await res.json();
-//     setAdvice(data.slip.advice);
-//     setCount((c) => c + 1);
-//   }
-
-//   useEffect(function () {
-//     getAdvice();
-//   }, []);
-
-
-//   return <>
-//     <div>
-//         <h1>Hello World </h1>
-//         <button onClick={getAdvice}>Get advice</button>
-//         <h4>{advice}</h4>
-//         <Message count={count} />
-//     </div>
-//   </>
-// }
-// function Message(props) {
-//   return (
-//     <>
-//       <p>
-//         you have raed <strong>{props.count}</strong> pieces of advice
-//       </p>
-//     </>
-//   );
-// }
-
-////////////////////////////////////////////
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import PizzaApp from "./Components/PizzaApp";
 import ProfileCard from "./Components/ProfileCard";
+import HomePage from "./Components/HomePage";
+import StepsProject from "./Components/StepsProject";
+import Advice from "./Components/Advice";
 
 export default function App(){
     return <>
-    <PizzaApp/>
-    <ProfileCard/>
+
+     <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/project1" element={<Advice/>} />
+        <Route path="/project2" element={<PizzaApp/>} />
+        <Route path="/project3" element={<ProfileCard/>} />
+        <Route path="/project4" element={<StepsProject/>} />
+      </Routes>
+    </Router>
     </>
 }

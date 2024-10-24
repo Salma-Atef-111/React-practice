@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
+.myAppBody {
   font-family: 'Roboto Mono', sans-serif;
   color: #252525;
   font-weight: 400;
@@ -19,6 +9,7 @@ body {
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
+  font-size: 62.5%;
 }
 
 .container {
@@ -162,19 +153,19 @@ body {
   gap: 2.4rem;
 }
 
-.btn {
+.orderBtn{
   color: inherit;
   font-family: inherit;
   border: none;
   font-size: 1.4rem;
   font-weight: 500;
   background-color: #edc84b;
-  padding: 1.4rem 3.2rem;
+  padding: 0.5rem 2.2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.btn:hover {
+.orderBtn:hover {
   background-color: #e9bb24;
 }
 
