@@ -19,7 +19,7 @@ const DateCounter = () => {
         className="text-center"
         style={{
           paddingTop: "20px",
-          paddingBottom: "50px",
+          paddingBottom: "30px",
           backgroundColor: "#ffecc8",
         }}
       >
@@ -28,7 +28,14 @@ const DateCounter = () => {
           Click here to know
         </button>
         {showText && (
-          <h4 style={{ paddingTop: "20px" }}>Here is your details</h4>
+          <p style={{ paddingTop: "20px" }}>
+            Set the number of steps in <strong>Steps</strong> to control how
+            much the date changes each time. <br />
+            Then, use the <strong>Counter</strong> to increase or decrease the
+            date accordingly,
+            <br />
+            and watch the updated date appear below automatically.
+          </p>
         )}
       </div>
       <div style={{ paddingBottom: "50px" }}>
@@ -109,14 +116,15 @@ function DateCounterTwo() {
   return (
     <>
       <div className="text-center">
-        <h4
+        <h3
           style={{
-            paddingBottom: "30px",
+            paddingTop: "10px",
+            paddingBottom: "20px",
             backgroundColor: "#ffecc8",
           }}
         >
           Another way to do the counter
-        </h4>
+        </h3>
         <input
           type="range"
           min={1}
