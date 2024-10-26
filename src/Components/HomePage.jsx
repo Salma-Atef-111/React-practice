@@ -31,7 +31,7 @@ export default function HomePage() {
             </button>
             <button type="button" class="btn btn-danger">
               <Link to="/project5" className="myLink">
-                Date Count
+                Date Counter
               </Link>
             </button>
             <button type="button" class="btn btn-warning">
