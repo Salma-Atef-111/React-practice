@@ -34,6 +34,11 @@ export default function HomePage() {
                 Date Count
               </Link>
             </button>
+            <button type="button" class="btn btn-warning">
+              <Link to="/project6" className="myLink">
+                Flash Cards
+              </Link>
+            </button>
           </div>
         </div>
       </div>
