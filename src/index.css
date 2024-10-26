@@ -6,6 +6,7 @@
   .homePageBtns{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 30px;
     color: aliceblue;

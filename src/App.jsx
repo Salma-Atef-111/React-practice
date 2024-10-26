@@ -5,6 +5,7 @@ import ProfileCard from "./Components/ProfileCard";
 import HomePage from "./Components/HomePage";
 import StepsProject from "./Components/StepsProject";
 import Advice from "./Components/Advice";
+import SmallChallenge from "./Components/SmallChallenge";
 
 export default function App(){
     return <>
@@ -16,6 +17,8 @@ export default function App(){
         <Route path="/project2" element={<PizzaApp/>} />
         <Route path="/project3" element={<ProfileCard/>} />
         <Route path="/project4" element={<StepsProject/>} />
+        <Route path="/project5" element={<SmallChallenge/>} />
+
       </Routes>
     </Router>
     </>
