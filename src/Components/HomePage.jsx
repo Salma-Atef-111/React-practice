@@ -39,6 +39,33 @@ export default function HomePage() {
                 Flash Cards
               </Link>
             </button>
+            <button
+              type="button"
+              class="btn"
+              style={{ backgroundColor: "#f05c1f" }}
+            >
+              <Link to="/project7" className="myLink">
+                Accordion
+              </Link>
+            </button>
+            <button
+              type="button"
+              class="btn"
+              style={{ backgroundColor: "#1f3df0" }}
+            >
+              <Link to="/project8" className="myLink">
+                TipCalculator
+              </Link>
+            </button>
+            <button
+              type="button"
+              class="btn"
+              style={{ backgroundColor: "#2ff01f" }}
+            >
+              <Link to="/project9" className="myLink">
+                TextExpander
+              </Link>
+            </button>
           </div>
         </div>
       </div>

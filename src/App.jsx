@@ -7,6 +7,9 @@ import StepsProject from "./Components/StepsProject";
 import Advice from "./Components/Advice";
 import FlashCards from "./Components/FlashCards";
 import DateCounter from "./Components/DateCounter";
+import Accordion from "./Components/Accordion";
+import TipCalculator from "./Components/TipCalculator";
+import TextExpander from "./Components/TextExpander";
 
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
           <Route path="/project4" element={<StepsProject />} />
           <Route path="/project5" element={<DateCounter />} />
           <Route path="/project6" element={<FlashCards />} />
+          <Route path="/project7" element={<Accordion />} />
+          <Route path="/project8" element={<TipCalculator />} />
+          <Route path="/project9" element={<TextExpander />} />
         </Routes>
       </Router>
     </>
