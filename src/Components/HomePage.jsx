@@ -66,6 +66,15 @@ export default function HomePage() {
                 TextExpander
               </Link>
             </button>
+            <button
+              type="button"
+              class="btn"
+              style={{ backgroundColor: "#db1ff0" }}
+            >
+              <Link to="/project10" className="myLink">
+                Taps With React
+              </Link>
+            </button>
           </div>
         </div>
       </div>
