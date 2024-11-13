@@ -11,6 +11,7 @@ import Accordion from "./Components/Accordion";
 import TipCalculator from "./Components/TipCalculator";
 import TextExpander from "./Components/TextExpander";
 import TapsWithReact from "./Components/Taps";
+import CurrencyConverter from "./Components/CurrencyConverter";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/project8" element={<TipCalculator />} />
           <Route path="/project9" element={<TextExpander />} />
           <Route path="/project10" element={<TapsWithReact />} />
+          <Route path="/project11" element={<CurrencyConverter />} />
         </Routes>
       </Router>
     </>

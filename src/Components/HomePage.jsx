@@ -75,6 +75,11 @@ export default function HomePage() {
                 Taps With React
               </Link>
             </button>
+            <button type="button" class="btn btn-danger">
+              <Link to="/project11" className="myLink">
+                Currency Converter
+              </Link>
+            </button>
           </div>
         </div>
       </div>
